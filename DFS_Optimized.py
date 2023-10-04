@@ -37,6 +37,8 @@ print(graph)
 
 def DFSOptimize (node,graph):
     visited = set()
+    print(visited)
+    print(graph)
 
     if node not in graph:
         return
@@ -50,6 +52,7 @@ def DFSOptimize (node,graph):
             visited.add(current)
             for i in graph[current]:
                 stack.append(i)
+                print(stack)
 
 
 DFSOptimize("A",graph)
